@@ -1,0 +1,82 @@
+html {
+  scroll-padding-top: 55px;
+  scroll-behavior: smooth;
+}
+:root {
+  --main-color: #4726e1;
+}
+
+.text-main {
+  color: var(--main-color);
+}
+header {
+  background-image: url(../images/vecteezy_enigmatic-hooded-figure-manipulates-a-glowing-laptop-against_66609399.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+.icon {
+  width: 2rem;
+  height: 2rem;
+}
+.link a {
+  text-decoration: none;
+  color: white;
+}
+.title h2 {
+  font-size: 5rem;
+  font-weight: 900;
+  color: #f4f4f4;
+  letter-spacing: 10px;
+}
+.title h3 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: black;
+}
+.client-feedback {
+  border: 4px solid #f1f1f1;
+}
+.img-style {
+  width: 90px;
+  height: 90px;
+  border: 4px solid #f1f1f1;
+  border-radius: 50%;
+  transform: translateY(50%);
+}
+.client-feedback h6 {
+  position: relative;
+}
+.client-feedback h6::after {
+  content: " ";
+  background-color: var(--main-color);
+  height: 2px;
+  width: 10%;
+  position: absolute;
+  left: 45%;
+  bottom: 0;
+}
+.carousel-indicators [data-bs-target] {
+  width: 50px;
+  height: 50px;
+  border: 3px solid #f1f1f1;
+  border-radius: 50%;
+  text-indent: 0;
+}
+.card {
+  transition: transform 0.3s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+#contacts .contacts-info {
+  border: 4px solid #f1f1f1;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+#contacts .contacts-info a {
+  color: gray;
+  font-weight: 600;
+}
+form button {
+  width: 30%;
+}
