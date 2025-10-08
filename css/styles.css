@@ -25,7 +25,7 @@ header {
 }
 .title {
   width: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 .title h2 {
   font-size: 4rem;
@@ -99,4 +99,14 @@ form button {
 }
 #contacts {
   min-height: 100vh;
+}
+@media screen and (max-width: 767px) {
+  .title h2 {
+    font-size: 2rem;
+    letter-spacing: 3px;
+  }
+
+  .title h3 {
+    font-size: 1.5rem;
+  }
 }
