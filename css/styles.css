@@ -13,6 +13,7 @@ header {
   background-image: url(../images/vecteezy_enigmatic-hooded-figure-manipulates-a-glowing-laptop-against_66609399.jpg);
   background-size: cover;
   background-position: center center;
+  min-height: 100vh;
 }
 .icon {
   width: 2rem;
@@ -22,14 +23,18 @@ header {
   text-decoration: none;
   color: white;
 }
+.title {
+  width: 100%;
+  overflow-x: hidden;
+}
 .title h2 {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 900;
   color: #f4f4f4;
   letter-spacing: 10px;
 }
 .title h3 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 900;
   color: black;
 }
@@ -86,7 +91,8 @@ form button {
 #testimonial {
   min-height: 100vh;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 #courses {
   min-height: 100vh;
