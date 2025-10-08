@@ -80,3 +80,17 @@ header {
 form button {
   width: 30%;
 }
+#about {
+  min-height: 100vh;
+}
+#testimonial {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+#courses {
+  min-height: 100vh;
+}
+#contacts {
+  min-height: 100vh;
+}
