@@ -37,6 +37,9 @@ body.dark .client-feedback h6 {
   color: black;
   background-color: #e6eef8;
 }
+#darkMode span {
+  display: none;
+}
 
 body.dark #darkMode {
   background-color: black;
@@ -224,5 +227,10 @@ form button {
 
   .title h3 {
     font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 991px) {
+  #darkMode span {
+    display: inline;
   }
 }
