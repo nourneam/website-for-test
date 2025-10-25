@@ -5,7 +5,43 @@ html {
 :root {
   --main-color: #4726e1;
 }
+body {
+  overflow: hidden;
+  background-color: #ffffff;
+  color: #111111;
+  transition: all 0.3s ease;
+}
 
+body.dark {
+  background-color: #0b0f14;
+  color: #e6eef8;
+}
+
+body.dark p {
+  color: white !important;
+}
+
+body.dark .card p,
+body.dark .card h5,
+body.dark .card h6 {
+  color: black !important;
+}
+
+body.dark .client-feedback h6 {
+  color: white !important;
+}
+
+/* button dark mode */
+#darkMode {
+  border-radius: 50px;
+  color: black;
+  background-color: #e6eef8;
+}
+
+body.dark #darkMode {
+  background-color: black;
+  color: white;
+}
 .text-main {
   color: var(--main-color);
 }
@@ -100,6 +136,86 @@ form button {
 #contacts {
   min-height: 100vh;
 }
+
+/* loading Page */
+#loading {
+  background-color: #212529;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+}
+
+#loading i {
+  font-size: 50px;
+  color: white;
+}
+
+/* button Top */
+#btnTop {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  cursor: pointer;
+  z-index: 9999;
+  display: none;
+}
+
+/* side bar */
+
+#ColorBoxId {
+  background-color: #212529;
+  position: fixed;
+  left: 0;
+  top: 50%;
+  display: flex;
+  transform: translateY(-50%);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#ColorBoxId .color-icon {
+  padding: 5px;
+  color: white;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+#ColorBoxId .color-box {
+  color: white;
+  background-color: #212529;
+  padding: 5px;
+  display: none;
+}
+#ColorBoxId .color-box span {
+  display: inline-block;
+  margin: 2px;
+  width: 30px;
+  height: 30px;
+}
+#spanOne {
+  background-color: #09c;
+}
+#spanTwo {
+  background-color: darkgray;
+}
+#spanThree {
+  background-color: teal;
+}
+#spanFour {
+  background-color: var(--main-color);
+}
+#spanFive {
+  background-color: tomato;
+}
+
 @media screen and (max-width: 767px) {
   .title h2 {
     font-size: 2rem;

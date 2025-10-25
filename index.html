@@ -12,9 +12,9 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top ">
+    <nav id="navBar" class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top ">
         <div class="container">
-            <a class="navbar-brand" href="#"><span class="text-danger">div</span>.NOUR</a>
+            <a class="navbar-brand" href="#home"><span class="text-danger">div</span>.NOUR</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -38,6 +38,10 @@
                         <a class="nav-link" href="#contacts">Contacts</a>
                     </li>
                 </ul>
+                <button id="darkMode">
+                    <i class="fa-solid fa-moon"></i>
+                    <span>Dark mode</span>
+                </button>
             </div>
         </div>
     </nav>
@@ -488,9 +492,37 @@
         </section>
     </main>
 
+    <!-- loading Page - button to top - side bar -->
+    <section>
+        <!-- side bar -->
+        <div id="ColorBoxId">
+            <div class="color-box">
+                <h2>Choose Color :</h2>
+                <span id="spanOne"></span>
+                <span id="spanTwo"></span>
+                <span id="spanThree"></span>
+                <span id="spanFour"> </span>
+                <span id="spanFive"></span>
+            </div>
+            <div class="color-icon">
+                <i class="fa-solid fa-gear fa-spin-pulse"></i>
+            </div>
+        </div>
+
+        <!-- loading Page -->
+        <div id="loading">
+            <i class="fa-solid fa-spinner fa-spin"></i>
+        </div>
+
+        <!-- button to top -->
+        <button id="btnTop" class="btn btn-primary ">
+            <i class="fa-solid fa-arrow-up fa-beat"></i>
+        </button>
 
 
+    </section>
 
+    <script src="js/jquery-3.7.1.js"></script> <!-- jQuery -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
